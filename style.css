@@ -1,0 +1,103 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+:root {
+  --light-grey: #e0e0e0;
+  --dark-grey: #606060;
+  --red-bg: #da1e5d;
+}
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.container {
+  width: 100%;
+}
+.nav-btn {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  border-radius: 5px;
+}
+.nav-btn.active {
+  background-color: var(--dark-grey);
+  color: var(--light-grey);
+}
+.layoutOne {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.layoutOne h2 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+}
+.card {
+  color: var(--light-grey);
+}
+.card h2 {
+  background-color: var(--red-bg);
+}
+.layoutTwo {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 300px 300px 300px;
+}
+.layoutTwo h2 {
+  padding: 100px;
+  border-radius: 10px;
+}
+.layoutThree {
+  display: grid;
+  grid-template-columns: repeat (3, 1fr);
+  grid-template-rows: 30% 350px auto;
+  grid-gap: 1em;
+}
+.layoutThree > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.layoutThree #card1 {
+  grid-column: 1 / 4;
+}
+.layoutThree #card1 h2 {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+}
+.layoutThree #card5 {
+  grid-column: 1 / 4;
+  padding: 1em;
+}
+.layoutThree #card5 h2 {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+}
+
+.layoutThree #card3 {
+  min-width: 15em;
+  padding: 1em;
+  background-color: var(--red-bg);
+  border-radius: 10px;
+}
+.layoutThree #card2 {
+  background-color: var(--red-bg);
+  border-radius: 10px;
+}
+.layoutThree #card4 {
+  background-color: var(--red-bg);
+  border-radius: 10px;
+}
